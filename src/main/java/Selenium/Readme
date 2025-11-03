@@ -1,0 +1,7 @@
+Difference between Absolute x path and relative x path
+
+- Absolute is you go one by one , traversing and relative you know the place and goes directly
+
+
+Double // - Relative x path 
+Single / - Absolute x path
