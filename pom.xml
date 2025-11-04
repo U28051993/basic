@@ -3,4 +3,11 @@
   <groupId>basic</groupId>
   <artifactId>basic</artifactId>
   <version>0.0.1-SNAPSHOT</version>
+  <dependencies>
+  	<dependency>
+  		<groupId>org.com.restshub</groupId>
+  		<artifactId>restapi</artifactId>
+  		<version>0.0.1-SNAPSHOT</version>
+  	</dependency>
+  </dependencies>
 </project>
