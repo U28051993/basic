@@ -11,14 +11,14 @@ import org.openqa.selenium.support.ui.Select;
 public class SignUP {
 
 	public static void main(String[] args) {
-
+		System.out.println();
 		WebDriver driver = new ChromeDriver();
 		driver.get("https://freelance-learn-automation.vercel.app/login");
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofMillis(10));
 
 		driver.findElement(By.linkText("New user? Signup")).click();
-		
+
 		try {
 			Thread.sleep(200);
 		} catch (InterruptedException e) {
@@ -39,7 +39,15 @@ public class SignUP {
 
 		Select hobbies = new Select(driver.findElement(By.id("hobbies")));
 		hobbies.selectByContainsVisibleText("Playing");
-		driver.findElement(By.className("submit-btn")).click();
+
+		WebElement signupButton = driver.findElement(By.className("submit-btn"));
+		if (signupButton.isEnabled()) {
+
+			signupButton.click();
+		} else {
+			System.out.println("Failed");
+
+		}
 
 	}
 
