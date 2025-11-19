@@ -10,7 +10,7 @@ import org.openqa.selenium.support.ui.Select;
 
 public class OrangeHRM {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws InterruptedException  {
 		System.out.println("start");
 		WebDriver driver = new ChromeDriver();
 		driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
