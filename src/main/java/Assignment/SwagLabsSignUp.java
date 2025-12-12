@@ -12,9 +12,9 @@ public class SwagLabsSignUp {
 		// TODO Auto-generated method stub
 
 		WebDriver driver = new ChromeDriver();
-		driver.get("https://www.saucedemo.com");
+		driver.get("https://www.saucedemo.com/");
 		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(Duration.ofMillis(100));
+		driver.manage().timeouts().implicitlyWait(Duration.ofMillis(10000));
 
 		System.out.println("---Start the Process---");
 

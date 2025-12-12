@@ -17,6 +17,7 @@ public class AlertCommands {
 
 		driver.switchTo().alert();
 		Alert alert = driver.switchTo().alert();
+		alert.accept();
 
 	}
 
